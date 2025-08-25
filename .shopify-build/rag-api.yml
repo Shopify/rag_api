@@ -1,11 +1,7 @@
 containers:
-  default:
-    build:
-      from: ubuntu-24
-      type: ci
+  rag-api:
+    dockerfile:
+      path: Dockerfile.lite
 
 steps:
-  - label: Tests
-    timeout: 5m
-    run:
-        - echo "Hello World"
+  - build: rag-api
