@@ -1,0 +1,7 @@
+containers:
+  rag-api:
+    dockerfile:
+      path: Dockerfile.lite
+
+steps:
+  - build: rag-api
